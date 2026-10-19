@@ -53,3 +53,4 @@ int teljeseretek = termekek.Sum(t => t.ErtekSzamitas(10));
 Console.WriteLine($"Teljes raktárkészlet értéke: {teljeseretek:N0} Ft");
 
 Console.WriteLine($"\nÖsszes termék száma: {Termek.OsszesTermekSzama} db");
+

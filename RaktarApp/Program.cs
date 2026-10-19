@@ -41,6 +41,15 @@ foreach (string sor in File.ReadAllLines("termekek.txt").Skip(1))
 }
 
 Console.WriteLine($"Sikeresen beolvasot Termrekek: {termekek.Count}");
-Console.WriteLine($"Hibás sorok Termekek: {hibasSorokSzama}");
+Console.WriteLine($"Hibás sorok Termekek: {hibasSorokSzama}\n");
 
+foreach (var termek in termekek)
+{
+    Console.WriteLine(termek);
+}
+Console.WriteLine();
 
+int teljeseretek = termekek.Sum(t => t.ErtekSzamitas(10));
+Console.WriteLine($"Teljes raktárkészlet értéke: {teljeseretek:N0} Ft");
+
+Console.WriteLine($"\nÖsszes termék száma: {Termek.OsszesTermekSzama} db");

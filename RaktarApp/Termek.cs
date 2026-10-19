@@ -4,7 +4,7 @@ using System.Text;
 
 namespace RaktarApp
 {
-    internal class Termek
+    public class Termek
     {
         string Cikkszam { get; set; }
         protected int alapar;
